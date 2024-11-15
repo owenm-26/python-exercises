@@ -35,8 +35,9 @@ def clean_fruit_response():
     
 def process_logs(seconds: int):
     try:
+        print(f'Running logs for {seconds} seconds...')
         response = get_api_request(f'logs/{seconds}')
-        print(response.json())
+        print(response.text)
 
     except:
         print("ERROR in process_logs")

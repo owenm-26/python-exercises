@@ -20,10 +20,10 @@ def fruit():
 def create_logs(seconds):
     logs = []
     for i in range(seconds):
-        logs.append(f"S{i}:{datetime.datetime.now()},{random.randrange(0,100000)/ 100},{random.randrange(0,100000)/ 100}")
+        logs.append(f"S{i}-{datetime.datetime.now().time()},{random.randrange(0,100000)/ 100},{random.randrange(0,100000)/ 100}")
         time.sleep(1)
         
-    return logs
+    return "\n".join(logs)
 
 if __name__ == '__main__':
     app.run(debug=False, port=5000)
