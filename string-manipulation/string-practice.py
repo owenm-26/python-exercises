@@ -30,12 +30,22 @@ def clean_fruit_response():
         return fruits
 
     except:
+        print("ERROR in clean_fruit_response")
         return ConnectionError("Failed")
+    
+def process_logs(seconds: int):
+    try:
+        response = get_api_request(f'logs/{seconds}')
+        print(response.json())
 
+    except:
+        print("ERROR in process_logs")
+        return ConnectionError("Failed")
 
 if __name__ == "__main__":
     str1: str = "abcdef"
     api_path: str = "fruits"
 
-    print(clean_fruit_response())
+    # print(clean_fruit_response())
+    print(process_logs(5))
     
