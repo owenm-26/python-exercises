@@ -28,5 +28,7 @@
 
 `ord("a")` - gets the numerical value of the string. Uppercase is 65-90. Lowercase is 97-122.
 
+`chr(str)` - turns number into a unix character. Opposite of `ord()`
+
 `a.title()` - turns string into title case 
 ex: "owen mariani" --> "Owen Mariani"
