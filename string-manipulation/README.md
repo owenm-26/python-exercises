@@ -20,6 +20,8 @@
 
 `a.replace("r", "R")` - replaces every occurrence of the first with the second.
 
+`a.isalnum()` - returns True is alphabetical or numeric. Otherwise false
+
 ## Cases
 
 `a.lower()` - changes every character in string to lowercase
