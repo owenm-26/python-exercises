@@ -22,6 +22,8 @@
 
 `a.isalnum()` - returns True is alphabetical or numeric. Otherwise false
 
+`print(f"{number:.6f}")` - prints `number` with exactly 6 decimal points
+
 ## Cases
 
 `a.lower()` - changes every character in string to lowercase
